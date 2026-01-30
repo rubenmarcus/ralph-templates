@@ -1,0 +1,85 @@
+name: Validate Specs
+
+on:
+  push:
+    paths:
+      - 'specs/**/*.md'
+      - 'templates.json'
+      - 'scripts/validate-specs.js'
+  pull_request:
+    paths:
+      - 'specs/**/*.md'
+      - 'templates.json'
+      - 'scripts/validate-specs.js'
+
+jobs:
+  validate-specs:
+    name: Validate Spec Format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate spec files
+        run: node scripts/validate-specs.js
+
+  validate-registry:
+    name: Validate Registry
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate templates.json
+        run: |
+          node -e "
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('templates.json', 'utf-8'));
+
+            // Check required fields
+            if (!data.version) throw new Error('Missing version');
+            if (!Array.isArray(data.templates)) throw new Error('templates must be an array');
+            if (!Array.isArray(data.categories)) throw new Error('categories must be an array');
+
+            // Validate each template
+            const requiredFields = ['id', 'name', 'description', 'category', 'tags', 'difficulty', 'path'];
+            for (const template of data.templates) {
+              for (const field of requiredFields) {
+                if (!template[field]) {
+                  throw new Error('Template ' + template.id + ' missing field: ' + field);
+                }
+              }
+
+              // Check path exists
+              if (!fs.existsSync(template.path)) {
+                throw new Error('Template ' + template.id + ' path does not exist: ' + template.path);
+              }
+            }
+
+            console.log('✓ templates.json is valid');
+            console.log('  - ' + data.templates.length + ' templates');
+            console.log('  - ' + data.categories.length + ' categories');
+          "
+
+  lint-markdown:
+    name: Lint Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Lint markdown files
+        run: markdownlint 'specs/**/*.md' --config .markdownlint.json

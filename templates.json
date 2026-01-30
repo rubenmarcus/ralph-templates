@@ -1,0 +1,185 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "id": "nextjs-saas",
+      "name": "Next.js SaaS Starter",
+      "description": "Build a full-featured SaaS application with authentication, subscription billing, and a dashboard.",
+      "category": "web-dev",
+      "tags": ["nextjs", "saas", "stripe", "authentication", "typescript", "prisma", "tailwind"],
+      "difficulty": "advanced",
+      "path": "specs/web-dev/nextjs-saas.md"
+    },
+    {
+      "id": "landing-page",
+      "name": "Modern Landing Page",
+      "description": "Build a modern, animated landing page for a product or service.",
+      "category": "web-dev",
+      "tags": ["nextjs", "landing-page", "framer-motion", "tailwind", "typescript"],
+      "difficulty": "beginner",
+      "path": "specs/web-dev/landing-page.md"
+    },
+    {
+      "id": "express-api",
+      "name": "Express.js REST API",
+      "description": "Build a production-ready RESTful API with Express.js.",
+      "category": "web-dev",
+      "tags": ["express", "api", "rest", "nodejs", "typescript", "prisma", "jwt"],
+      "difficulty": "intermediate",
+      "path": "specs/web-dev/express-api.md"
+    },
+    {
+      "id": "graphql-api",
+      "name": "GraphQL API with Apollo Server",
+      "description": "Build a production-ready GraphQL API with Apollo Server.",
+      "category": "web-dev",
+      "tags": ["graphql", "apollo", "api", "nodejs", "typescript", "prisma", "subscriptions"],
+      "difficulty": "intermediate",
+      "path": "specs/web-dev/graphql-api.md"
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-Commerce Platform",
+      "description": "Build a full-featured e-commerce platform with product management, shopping cart, and checkout.",
+      "category": "web-dev",
+      "tags": ["nextjs", "ecommerce", "stripe", "prisma", "search", "typescript", "tailwind"],
+      "difficulty": "advanced",
+      "path": "specs/web-dev/ecommerce.md"
+    },
+    {
+      "id": "blog-cms",
+      "name": "Blog with CMS",
+      "description": "Build a blog platform with a built-in content management system.",
+      "category": "web-dev",
+      "tags": ["nextjs", "blog", "cms", "editor", "prisma", "typescript", "tailwind"],
+      "difficulty": "intermediate",
+      "path": "specs/web-dev/blog-cms.md"
+    },
+    {
+      "id": "erc20-token",
+      "name": "ERC-20 Token",
+      "description": "Build a standard ERC-20 token with additional features and comprehensive tests.",
+      "category": "blockchain",
+      "tags": ["solidity", "ethereum", "erc20", "hardhat", "smart-contract", "defi"],
+      "difficulty": "intermediate",
+      "path": "specs/blockchain/erc20-token.md"
+    },
+    {
+      "id": "nft-collection",
+      "name": "NFT Collection",
+      "description": "Build an ERC-721 NFT collection with minting, reveal mechanics, and marketplace integration.",
+      "category": "blockchain",
+      "tags": ["solidity", "ethereum", "nft", "erc721", "hardhat", "ipfs", "nextjs"],
+      "difficulty": "intermediate",
+      "path": "specs/blockchain/nft-collection.md"
+    },
+    {
+      "id": "defi-staking",
+      "name": "DeFi Staking Platform",
+      "description": "Build a DeFi staking platform with rewards distribution and liquidity pools.",
+      "category": "blockchain",
+      "tags": ["solidity", "ethereum", "defi", "staking", "hardhat", "nextjs"],
+      "difficulty": "advanced",
+      "path": "specs/blockchain/defi-staking.md"
+    },
+    {
+      "id": "web3-dapp",
+      "name": "Web3 dApp",
+      "description": "Build a modern Web3 decentralized application with wallet connectivity and smart contract interaction.",
+      "category": "blockchain",
+      "tags": ["nextjs", "web3", "wagmi", "rainbowkit", "solidity", "ethereum", "typescript"],
+      "difficulty": "intermediate",
+      "path": "specs/blockchain/web3-dapp.md"
+    },
+    {
+      "id": "docker-compose",
+      "name": "Docker Compose Setup",
+      "description": "Build a multi-container Docker development environment.",
+      "category": "devops",
+      "tags": ["docker", "docker-compose", "nginx", "postgresql", "redis", "containers"],
+      "difficulty": "intermediate",
+      "path": "specs/devops/docker-compose.md"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes Deployment",
+      "description": "Build Kubernetes manifests for deploying a web application.",
+      "category": "devops",
+      "tags": ["kubernetes", "k8s", "kustomize", "helm", "deployment", "containers"],
+      "difficulty": "advanced",
+      "path": "specs/devops/kubernetes.md"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions CI/CD",
+      "description": "Build a comprehensive CI/CD pipeline with GitHub Actions.",
+      "category": "devops",
+      "tags": ["github-actions", "ci-cd", "automation", "docker", "deployment"],
+      "difficulty": "intermediate",
+      "path": "specs/devops/github-actions.md"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform Infrastructure",
+      "description": "Build infrastructure as code with Terraform for cloud deployment.",
+      "category": "devops",
+      "tags": ["terraform", "aws", "infrastructure", "iac", "cloud", "vpc", "ecs"],
+      "difficulty": "advanced",
+      "path": "specs/devops/terraform.md"
+    },
+    {
+      "id": "react-native-app",
+      "name": "React Native App",
+      "description": "Build a cross-platform mobile application with React Native and Expo.",
+      "category": "mobile",
+      "tags": ["react-native", "expo", "mobile", "ios", "android", "typescript"],
+      "difficulty": "intermediate",
+      "path": "specs/mobile/react-native-app.md"
+    },
+    {
+      "id": "cli-tool",
+      "name": "CLI Tool",
+      "description": "Build a Node.js command-line interface application.",
+      "category": "tools",
+      "tags": ["nodejs", "cli", "commander", "typescript", "terminal"],
+      "difficulty": "intermediate",
+      "path": "specs/tools/cli-tool.md"
+    },
+    {
+      "id": "chrome-extension",
+      "name": "Chrome Extension",
+      "description": "Build a Chrome browser extension with modern tooling.",
+      "category": "tools",
+      "tags": ["chrome", "extension", "react", "typescript", "manifest-v3", "browser"],
+      "difficulty": "intermediate",
+      "path": "specs/tools/chrome-extension.md"
+    }
+  ],
+  "categories": [
+    {
+      "id": "web-dev",
+      "name": "Web Development",
+      "description": "Full-stack web applications and APIs"
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain",
+      "description": "Smart contracts and Web3 applications"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "description": "Infrastructure, CI/CD, and deployment"
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile",
+      "description": "Cross-platform mobile applications"
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "description": "CLI tools and browser extensions"
+    }
+  ]
+}
