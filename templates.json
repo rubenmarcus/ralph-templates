@@ -159,7 +159,7 @@
       "name": "AEO Toolkit",
       "description": "Build an Answer Engine Optimization toolkit with llms.txt, AI crawler management, structured data, and citation tracking.",
       "category": "seo",
-      "tags": ["nextjs", "aeo", "llms-txt", "robots-txt", "structured-data", "ai-crawlers", "typescript"],
+      "tags": ["aeo", "llms-txt", "robots-txt", "structured-data", "ai-crawlers", "typescript"],
       "difficulty": "advanced",
       "path": "specs/seo/aeo-toolkit.md"
     },
@@ -168,7 +168,7 @@
       "name": "SEO Toolkit",
       "description": "Build a comprehensive technical SEO toolkit with metadata, sitemaps, Core Web Vitals, and audit dashboard.",
       "category": "seo",
-      "tags": ["nextjs", "seo", "metadata", "sitemap", "structured-data", "core-web-vitals", "typescript"],
+      "tags": ["seo", "metadata", "sitemap", "structured-data", "json-ld", "typescript"],
       "difficulty": "intermediate",
       "path": "specs/seo/seo-toolkit.md"
     }
