@@ -49,6 +49,12 @@ Ralph reads these specs and builds the entire project autonomously.
 |----------|-------------|------------|
 | [react-native-app](specs/mobile/react-native-app.md) | Cross-platform mobile app | Intermediate |
 
+### SEO & AEO
+| Template | Description | Difficulty |
+|----------|-------------|------------|
+| [aeo-toolkit](specs/seo/aeo-toolkit.md) | Answer Engine Optimization with llms.txt, AI crawlers, citations | Advanced |
+| [seo-toolkit](specs/seo/seo-toolkit.md) | Technical SEO with metadata, sitemaps, Core Web Vitals | Intermediate |
+
 ### Tools
 | Template | Description | Difficulty |
 |----------|-------------|------------|
