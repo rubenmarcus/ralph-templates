@@ -153,6 +153,24 @@
       "tags": ["chrome", "extension", "react", "typescript", "manifest-v3", "browser"],
       "difficulty": "intermediate",
       "path": "specs/tools/chrome-extension.md"
+    },
+    {
+      "id": "aeo-toolkit",
+      "name": "AEO Toolkit",
+      "description": "Build an Answer Engine Optimization toolkit with llms.txt, AI crawler management, structured data, and citation tracking.",
+      "category": "seo",
+      "tags": ["nextjs", "aeo", "llms-txt", "robots-txt", "structured-data", "ai-crawlers", "typescript"],
+      "difficulty": "advanced",
+      "path": "specs/seo/aeo-toolkit.md"
+    },
+    {
+      "id": "seo-toolkit",
+      "name": "SEO Toolkit",
+      "description": "Build a comprehensive technical SEO toolkit with metadata, sitemaps, Core Web Vitals, and audit dashboard.",
+      "category": "seo",
+      "tags": ["nextjs", "seo", "metadata", "sitemap", "structured-data", "core-web-vitals", "typescript"],
+      "difficulty": "intermediate",
+      "path": "specs/seo/seo-toolkit.md"
     }
   ],
   "categories": [
@@ -180,6 +198,11 @@
       "id": "tools",
       "name": "Tools",
       "description": "CLI tools and browser extensions"
+    },
+    {
+      "id": "seo",
+      "name": "SEO & AEO",
+      "description": "Search engine and answer engine optimization toolkits"
     }
   ]
 }
